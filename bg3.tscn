@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/bg3.png" type="Texture" id=1]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+
+
+uniform float screen_height = 270.0;
+
+
+
+void fragment() {
+
+
+	float diff_x = 0.0;
+
+
+	if ( int(UV.y * screen_height) % 2 == 0 ){
+
+
+		diff_x += 0.095 * sin((10.0 * UV.y) + (0.50 * TIME));
+
+
+	}
+
+	else{
+
+
+		diff_x += -0.075 * sin((-90.0 * UV.y) + (2.0 * TIME));
+
+
+	}
+
+	
+
+	COLOR = texture(TEXTURE, vec2(UV.x + diff_x, UV.y));
+
+}
+"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/screen_height = 270.0
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource( 2 )
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

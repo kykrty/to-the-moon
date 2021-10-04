@@ -1,0 +1,13 @@
+Here's the credit's for everything
+
+bg1, 2, and 3: All of them use images from the Wikimedia Commons. I had to check if I could use them and they were all under creative commons
+"neko.png": Spritesheet for a cat I found on OpenGameArt. The original creator of the cat is dogchicken and the one used was made by Umz
+Tileset: The tileset was made by HeartBeat. Here's their channel. https://www.youtube.com/channel/UCrHQNOyU1q6BFEfkNq2CYMA
+Most of the code: Most of the code was made from a tutorial by, again, HeartBeat.
+
+Everything else was made by me.
+
+Programs:
+Godot: the game engine used for this thing. https://godotengine.org/
+Paint.net: Used this for the sprites I made.
+
