@@ -1,0 +1,22 @@
+This is just to explain everything
+
+
+TEXTURES:
+
+Block: was meant to set a switch to open the door but I couldn't figure out how to make it work
+Switch: used for block
+Coin: was just a coin. It did nothing and it wasn't used for anything useful
+Door: just a door to go to the bonus room
+Saw: meant to kill the player and reset room, but I couldn't make it work before the deadline
+
+ROOMS:
+
+
+Bonus_RM: was just a bonus room filled with coins. Doesn't work because the door fucked up the level switching mechanic.
+Coin.tscn: just something so I wouldn't have to copy and paste the coin object over and over again.
+ROOM5_2: Second version of the room. It's the same as the original now because ROOM5_1 was meant for before you entered Bonus_RM
+
+CODE:
+
+
+GLobal: was used for the switch & block mechanic but was never actually used.
